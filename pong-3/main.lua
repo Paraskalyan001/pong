@@ -118,7 +118,7 @@ function love.draw()
 
     -- draw welcome text toward the top of the screen
     love.graphics.setFont(smallFont)
-    love.graphics.printf('Hello Pong!', 0, 20, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf({'Hello Pong!',gameState}, 0, 20, VIRTUAL_WIDTH, 'center')
 
     -- draw score on the left and right center of the screen
     -- need to switch font to draw before actually printing
